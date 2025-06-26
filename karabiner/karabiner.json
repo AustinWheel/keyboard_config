@@ -111,7 +111,7 @@
                         ]
                     },
                     {
-                        "description": "(k)uper(l)uper + e -> open_bracket",
+                        "description": "(k)uper(l)uper + e -> open_brace",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -125,13 +125,18 @@
                                     "key_code": "e",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "open_bracket" }],
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": ["shift"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "(k)uper(l)uper + r -> close_bracket",
+                        "description": "(k)uper(l)uper + r -> close_brace",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -145,7 +150,12 @@
                                     "key_code": "r",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "close_bracket" }],
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": ["shift"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -221,7 +231,7 @@
                         ]
                     },
                     {
-                        "description": "(k)uper(l)uper + c -> open_brace",
+                        "description": "(k)uper(l)uper + c -> open_bracket",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -235,18 +245,13 @@
                                     "key_code": "c",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "open_bracket",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
+                                "to": [{ "key_code": "open_bracket" }],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "(k)uper(l)uper + v -> Left",
+                        "description": "(k)uper(l)uper + v -> close_bracket",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -260,12 +265,7 @@
                                     "key_code": "v",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "close_bracket",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
+                                "to": [{ "key_code": "close_bracket" }],
                                 "type": "basic"
                             }
                         ]
